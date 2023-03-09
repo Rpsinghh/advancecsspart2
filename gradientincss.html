@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradients in css</title>
+</head>
+<body>
+    <style>
+        /* GRADIENTS are of two types 1.Linear gradient 2.Radial gradient */
+        .div1
+        {
+        
+            height:300px;
+            width:90%;
+            /* background-color: yellow; */
+            border:3px solid Red;
+            margin: 20px;
+            background-image: linear-gradient(red,yellow,green);
+            /* to right,to left,to top,to bottom */
+            background-image:linear-gradient(to right,red ,yellow ,green);
+            background-image: linear-gradient(to left,red ,yellow,green);
+            background-image: linear-gradient(to bottom,red ,yellow,green);
+            background-image: linear-gradient(to top,red ,yellow,green);
+            background-image: linear-gradient(to right,red,yellow,green,rgb(50,224,196));
+            /* rgb is used for a combination of the colors so we can use various values from online */
+
+            /* we can use degrees also like 15deg,30deg,90deg,180deg */
+            background-image: linear-gradient(15deg,red,yellow,green);
+            /* we can use percentage for bold colors */
+            background-image: linear-gradient(to right, rgb(13,115,19,0.5),rgb(50,24,156,0.5));
+            background-image: radial-gradient(red,yellow,green,rgb(50,224,196,1));
+            background-image: radial-gradient(circle,red,yellow,green);
+            background-image: radial-gradient(circle farthest-side,red,yellow,green);
+            background-image: radial-gradient(circle closest-side,red,yellow,green);
+
+
+
+
+
+        }
+    </style>
+    <div class="div1"></div>
+    <div class="div2"></div>
+    <div class="div3"></div>
+</body>
+</html>
