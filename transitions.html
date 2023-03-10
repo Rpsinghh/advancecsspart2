@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions</title>
+</head>
+<body>
+    <style>
+        /* Transition:property duration timefunction delay */
+        .div1
+        {
+            height:100px;
+            width:100px;
+            background-color: red;
+            border: 2px solid yellow;
+            margin-top: 10px;
+            margin-left: 10px;
+            transition: width 1s;
+            /* here we can use all which we want to use
+            property like linear,ease,ease-in ,ease-out,ease-in-out,cubic-beizer(p0,p1,p2,p3)  */
+            transition:all 2s;
+            transition: linear 2s;
+            transition: ease-out 2s;
+            transition: ease-in 2s;
+            transition: ease 2s;
+            transition: ease-in-out 2s;
+            transition: cubic-bezier(0.02,.82,1,1.02) 2s;
+
+
+
+
+            
+        }
+        .div1:hover{
+            width:200px;
+            height:200px;
+        }
+        .div2{
+            height:100px;
+            width:100px;
+            background-color: yellow;
+            border: 2px solid blue;
+            margin-top: 10px;
+            margin-left: 10px;
+            transition: width 2s,height 2s;
+            
+
+        }
+        .div2:hover{
+            width:200px;
+            height:200px;
+        }
+        .div3{
+            height:100px;
+            width:100px;
+            background-color: green;
+            border: 2px solid black;
+            margin-top: 10px;
+            margin-left: 10px;
+            transition-property: background-color,height,width;
+            transition-delay: 1s;
+            /* transition-timing-function: 2s; */
+            transition-duration: 2s;
+
+        }
+        .div3:hover{
+            background-color:blue;
+            height:150px;
+            width:150px;
+
+        }
+    </style>
+    <div class="div1"></div>   
+    <div class="div2"></div>
+    <div class="div3"></div>
+</body>
+</html>
