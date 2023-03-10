@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformation</title>
+</head>
+<body>
+    <style>
+        /* transform types
+            1.scale(x,y),scalexX(),scaleY()
+            2.skew(x,y),skewX(),skewY()
+            3.translate(x,y),translateX(),translateY()
+            4.rotate()
+            5.translate3d(x,y,z),translateZ(z)
+            6.scale3D(x,y,z),scaleZ(Z)
+             */
+        .div1
+        {
+            height:100px;
+            width:100px;
+            background-color: red;
+            border: 2px solid yellow;
+            margin-top: 10px;
+            margin-left: 10px;
+            transform: scale(1.5,1.5);
+            transform: scaleX(2);
+            transform: scaleY(1.2);
+
+     
+        }
+        .div1:hover{
+            width:200px;
+            height:200px;
+        }
+        .div2{
+            height:100px;
+            width:100px;
+            background-color: yellow;
+            border: 2px solid blue;
+            margin-top: 10px;
+            margin-left: 10px;
+            /* transform: skew(30deg,45deg);
+            transform:skewY(45deg);     
+            transform: skewX(45deg); 
+            transform: skew(-2deg,-2deg);   */
+            transform:all 2s;
+
+        }
+        .div2:hover{
+            width:200px;
+            height:200px; 
+            transform: translate(150px,150px);
+        }
+        .div3{
+            height:100px;
+            width:100px;
+            background-color: green;
+            border: 2px solid black;
+            margin-top: 10px;
+            margin-left: 10px;
+            transition: all 2s;
+            
+        }
+        .div3:hover{
+            background-color:blue;
+            height:150px;
+            width:150px;
+            transform: rotate(180deg);
+            
+
+        }
+    </style>
+    <div class="div1"></div>   
+    <div class="div2"></div>
+    <div class="div3"></div>
+</body>
+</html>
