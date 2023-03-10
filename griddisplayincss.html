@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Display</title>
+</head>
+<body>
+    <!-- Grid display is used for 2d items -->
+    <style>
+        .outer-div{
+            display:grid;
+            background-color: yellow;
+            /* grid-template-columns:first-column second-column third-column fourth-column */
+            grid-template-columns: 40px auto auto auto ;
+            /* display: inline-grid; */
+            /* display: grid; */
+            /* grid-template-rows: 40px 50px 50px; */
+            /* we can use 1fr also so this shows that the size is equally distributed */
+            /* grid-template-co/lumns: 0.5fr 1fr 1fr 1fr; */
+            /* gap between columns and rows */
+            grid-column-gap: 10px;
+            grid-row-gap: 10px;
+            grid-template-columns: 150px 150px 150px 150px;
+            grid-template-columns: repeat(4,200px);
+            grid-template-rows: repeat(4,40px);
+
+            /* So from here we start grid alignments */
+            justify-items: stretch;
+            /* justify-items: center; */
+            /* justify-items: start; */
+            /* justify-items: end; */
+            align-items: center;
+            align-items: end;
+            /* align-items: start; */
+            background-color: green;
+            justify-content: start;
+            justify-content: end;
+            justify-content: space-between;
+            justify-content: space-around;
+            height: 250px;
+            align-content: end;
+
+            
+        }
+        .inner-dev{
+            border: 2px solid red;
+            background-color: aqua;
+            /* grid-column-start: 1;
+            grid-column-end: 3; */
+            /* grid-row-start: 1; */
+            /* grid-row-end: 3; */
+            /* grid-row: 1/4; */
+            justify-content: center;
+            align-content: center;
+            justify-items: center;
+            align-items: center;
+            /* justify-self: center; */
+
+        }
+    </style>
+    <div class="outer-div">
+        <div class="inner-dev"> Item 1</div>
+        <div class="inner-dev"> Item 2</div>
+        <div class="inner-dev"> Item 3</div>
+        <div class="inner-dev"> Item 4</div>
+        <div class="inner-dev"> Item 5</div>
+        <div class="inner-dev"> Item 6</div>
+        <div class="inner-dev"> Item 7</div>
+        <div class="inner-dev"> Item 8</div>
+        <div class="inner-dev"> Item 9</div>
+        <div class="inner-dev"> Item 10</div>
+
+
+    </div>
+    
+</body>
+</html>
