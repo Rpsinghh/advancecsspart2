@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+</head>
+<body>
+    <!-- Animation is fo rgiving animation in css 
+    Animation:name duration timing-function delay iteration-count direction fill-modes -->
+
+    <style>
+        .heading{
+            font-size: 4em;
+            text-align:center;
+            letter-spacing: 1px;
+            text-shadow: 2px 2px 4px red;
+            animation-name: heading;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-timing-function: 2s;
+
+        }
+        @keyframes heading {
+            100%{transform:scale(2,2);}
+            
+        }
+        .top
+        {
+            height: 720px;
+            width: 720px;
+            border-radius: 50%;
+            background-color: aqua;
+            margin: auto;
+            margin: auto;
+            /* animation: midddle 2s linear 1s infinite ; */
+            animation-name: circle-animation;
+            animation-duration: 2s;
+            animation-timing-function: linear;
+            animation-delay: 5s;
+            animation-iteration-count: infinite;
+            animation-direction: reverse;
+
+        }
+        @keyframes circle-animation {
+            100% {
+                transform: rotate(360deg);
+            }
+            
+        }
+        .middle{
+            height: 180px;
+            width: 180px;
+            background-color: red;
+            border-radius: 50%;
+            margin: auto;
+            /* animation: midddle 2s linear 1s infinite ; */
+            animation-name: circle2-animation;
+            animation-duration: 0.5s;
+            /* animation-timing-function: linear; */
+            /* animation-delay: 2s; */
+            animation-iteration-count: infinite;
+            /* animation-direction: normal; */
+        
+        }
+        @keyframes circle2-animation {
+            100% {
+                transform: rotate(1800deg);
+            }
+            
+        }
+        .bottom{
+            height: 20px;
+            width:20px;
+            background-color: black;
+            margin: auto;
+            border-radius: 50%;
+        }
+        /* .top:hover{animation-play-state: paused;} */
+    </style>
+    <h1 class="heading">Animations</h1>
+    <div class="top">
+        <div class="middle"> <div class="bottom"></div>
+        <div class="bottom"></div>
+        <div class="bottom"></div>
+        <div class="bottom"></div>
+        <div class="bottom"></div>
+        <div class="bottom"></div>
+        <div class="bottom"></div>
+        <div class="bottom"></div>
+        <div class="bottom"></div>
+</div>
+<div class="middle " style="background-color:chartreuse"> <div class="bottom"></div>
+<div class="bottom"></div>
+<div class="bottom"></div>
+<div class="bottom"></div>
+<div class="bottom"></div>
+<div class="bottom"></div>
+<div class="bottom"></div>
+<div class="bottom"></div>
+<div class="bottom"></div>
+</div>
+        <div class="middle" style="background-color: yellow;"> <div class="bottom"></div>
+        <div class="bottom" style="background-color:green"></div>
+        <div class="bottom" style="background-color:green"></div>
+        <div class="bottom" style="background-color:green"></div>
+        <div class="bottom" style="background-color:green"></div>
+        <div class="bottom" style="background-color:green"></div>
+        <div class="bottom" style="background-color:green"></div>
+        <div class="bottom" style="background-color:green"></div>
+        <div class="bottom" style="background-color:green"></div>
+</div>
+        <div class="middle" style="background-color:darkorange">
+
+          <div class="bottom"></div>
+          <div class="bottom"></div>
+          <div class="bottom"></div>
+          <div class="bottom"></div>
+          <div class="bottom"></div>
+          <div class="bottom"></div>
+          <div class="bottom"></div>
+          <div class="bottom"></div>
+          <div class="bottom"></div>
+
+        </div>
+    </div>
+</body>
+</html>
